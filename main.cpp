@@ -70,12 +70,6 @@ void main()
 	wait();
 }
 
-double euler(double t, double y, double h, double(*fun)(double, double))
-{
-
-	return y + h * fun(t, y);
-}
-
 double anl(double t)
 {
 	return y_0 * exp(lambda * (t - t0));
